@@ -1,0 +1,8 @@
+Hey Nick,
+
+I wanted to share some inputs regarding the implementation of K-Means Algorithm used to detect credit card fraud in the Iron Bank of Bravos project. Even though we were able to design a robust model, it would be great to fine tune the hyperparameters used, in order to enhance the performance and get optimal results from it. We can implement that by using "Cluster Validation for Prediction Strength" algorithm proposed in a paper published by Stanford students. They basically sample the dataset into 3-4 parts, arbitrarily choose the number of clusters (k) hyperparameter from a range of values and perform k-means on all the sample sets. Once it's completed, they find the total number of common values available per cluster in 4 of the samples taken. This helps weed out the most anomalous cluster (based on the size of the common values). After that is found, we can see the distribution of values in each cluster and decide on the score threshold (t). This way we can forge cross validation like approach to find the best parameters for unsupervised learning models.
+
+You can read more about this method by visiting http://statweb.stanford.edu/~gwalther/predictionstrength.pdf link. We can probably schedule a meeting next week to go over this and devise a strategy for implementing it.
+
+Thanks and Regards,
+Anurag Bejju

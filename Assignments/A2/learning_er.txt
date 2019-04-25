@@ -1,0 +1,19 @@
+#  Professional Masters in Big Data Program - Simon Fraser University
+
+#  Assignment 2 (Question 2 - learning_er.txt)
+
+#  Submission Date: 20th January 2019
+#  Name: Anurag Bejju
+#  Student ID: 301369375
+
+1.    How to construct a training dataset?
+
+In-order to sample training data from a class imbalanced dataset, we can use techniques like Synthetic Minority Over-sampling Technique (SMOTE) which uses a combination of oversampling and undersampling to generate a more balanced dataset. This method facilitates oversampling by constructing new minority class data instance via an algorithm and not by mere replicating minority class. Later we use stratified sampling to ensure that the train and test sets have approximately the same percentage of samples of each target class as the complete set.
+
+2.    How to transform a pair of records into a feature vector?
+
+A set of numeric features that impact a classification output can be  described as a feature vector. In this particular case, the jaccard similarity value can be used as a feature vector. Also other text similarity metrics like cosine similarity, TF-IDF reweighing and  Spearman's rank correlation coefficient can be used to generate this.
+
+3.    How to construct a test dataset?
+
+After using techniques like Synthetic Minority Over-sampling Technique (SMOTE) to combat class imbalance problem, we can use stratified sampling to ensure that the train and test sets have approximately the same percentage of samples of each target class as the complete set. This divide can be 70-30 ratio with 30 being test data.
