@@ -1,0 +1,4 @@
+# TradeSpade - Price Signal Forecast for Financial Assets
+# CMPT 733: Big Data Programming II (Spring 2019) – Final Project
+
+Youtube URL : https://www.youtube.com/watch?v=7khgvYT3dO8
